@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+
+class Vehicle {
+  public:
+
+    string brand;
+    
+    void show_brand() {
+        cout << "Brand: " << brand << endl;
+    }    
+};
+
+
+class Car : public Vehicle {  
+  public:
+   
+    string model;
+
+    void show_model() {
+        cout << "Model: " << model << endl;
+    }
+};
+
+int main() {
+    
+   
+    Car my_car;
+
+    
+    my_car.brand = "Honda";
+    my_car.model = "Accord";
+
+   
+    my_car.show_brand();
+    my_car.show_model();
+
+    return 0;    
+}
